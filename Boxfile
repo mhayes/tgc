@@ -2,7 +2,7 @@ global:
   env:
     - LARAVEL_ENV: production
 web1:
-  name: YOURAPPNAME
+  name: tgc
   after_build:
     - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install"
   shared_writable_dirs:
