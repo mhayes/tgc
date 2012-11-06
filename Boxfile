@@ -2,7 +2,7 @@ global:
   env:
     - LARAVEL_ENV: production
 web1:
-  name: YOURAPPNAME
+  name: TGC
   after_build:
     - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install"
   shared_writable_dirs:
@@ -20,6 +20,8 @@ web1:
     - eaccelerator
     - memcached
   before_deploy:
+    - "php artisan migrate:install"
+    - "php artisan migrate"
   after_deploy:
     - "rm -f storage/cache/*"
     - "rm -f storage/views/*"
