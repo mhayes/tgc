@@ -70,9 +70,9 @@ return array(
 		'mysql' => array(
 			'driver'   => 'mysql',
 			'host'     => 'localhost',
-			'database' => 'database',
-			'username' => 'root',
-			'password' => '',
+			'database' => 'tgc',
+			'username' => 'tgcuser',
+			'password' => 'n1ckf4ld0',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 		),
