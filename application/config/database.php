@@ -69,7 +69,7 @@ return array(
 
 		'mysql' => array(
 			'driver'   => 'mysql',
-			'host'     => 'tunnel.pagodabox.com:3306',
+			'host'     => 'http://tunnel.pagodabox.com:3306',
 			'database' => 'tgc',
 			'username' => 'maple',
 			'password' => 'KNInXSOa',
