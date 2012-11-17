@@ -67,8 +67,7 @@ return array(
 			'prefix'   => '',
 		),
 
-		'mysql' => array(
-			'driver'   => 'mysql',
+		/'driver'   => 'mysql',
 			'host'     => 'tunnel.pagodabox.com',
 			'database' => 'tgc',
 			'username' => 'maple',
@@ -76,6 +75,16 @@ return array(
 			'charset'  => 'utf8',
 			'prefix'   => '',
 		),
+
+		/*'mysql' => array(
+			'driver'   => 'mysql',
+			'host'     => 'localhost',
+			'database' => 'tgc',
+			'username' => 'tgcuser',
+			'password' => 'n1ckf4ld0',
+			'charset'  => 'utf8',
+			'prefix'   => '',
+		),*/
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',

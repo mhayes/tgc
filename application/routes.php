@@ -55,6 +55,9 @@ Route::get('test', function()
 	phpinfo();*/
 	$users = DB::query('select * from test');
 	var_dump($users);
+
+	$users1 = DB::query('select * from test2');
+	var_dump($users1);
 });
 
 /*
