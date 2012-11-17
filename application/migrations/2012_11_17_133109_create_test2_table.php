@@ -12,7 +12,7 @@ class Create_Test2_Table {
 		});
 		DB::table('test2')->insert(array(
 		    'email'  => 'rikkiola@gmail.com',
-		    'age'  => '35',
+		    'age'  => '36',
 		));		
 	}
 
