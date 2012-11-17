@@ -49,7 +49,9 @@ Route::get('sassplay', function()
 
 Route::get('test', function()
 {
-	return var_dump($_SERVER);
+	 getenv('LARAVEL_ENV');
+	 var_dump($_SERVER); 
+	 phpinfo();
 });
 
 /*
