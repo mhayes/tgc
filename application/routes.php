@@ -53,11 +53,11 @@ Route::get('test', function()
 	/*getenv('LARAVEL_ENV');
 	var_dump($_SERVER); 
 	phpinfo();*/
-	/*$users = DB::query('select * from test');
+	$users = DB::query('select * from test');
 	var_dump($users);
 
 	$users1 = DB::query('select * from test2');
-	var_dump($users1);*/
+	var_dump($users1);
 
 
 });
