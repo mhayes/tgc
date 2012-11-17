@@ -67,7 +67,7 @@ return array(
 			'prefix'   => '',
 		),
 
-		/'driver'   => 'mysql',
+		'driver'   => 'mysql',
 			'host'     => 'tunnel.pagodabox.com',
 			'database' => 'tgc',
 			'username' => 'maple',
