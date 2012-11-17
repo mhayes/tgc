@@ -2,6 +2,13 @@
 
 class Base_Controller extends Controller {
 
+	public function __construct()
+	{
+	    //Assets
+	    //Asset::add('style', 'css/style.css');
+	    parent::__construct();
+	}
+
 	/**
 	 * Catch-all method for requests that can't be matched.
 	 *
@@ -14,4 +21,6 @@ class Base_Controller extends Controller {
 		return Response::error('404');
 	}
 
+	//public $layout = 'templates.mainnest';
+	
 }

@@ -32,14 +32,24 @@
 |
 */
 
+//Automatically detect controllers
+Route::controller(Controller::detect());
+
+//Home page
 Route::get('/', function()
 {
 	return View::make('home.index');
 });
 
-Route::get('sass', function()
+
+Route::get('sassplay', function()
 {
 	return View::make('home.sass');
+});
+
+Route::get('test', function()
+{
+	return var_dump($environment);
 });
 
 /*
@@ -98,6 +108,12 @@ Event::listen('500', function()
 Route::filter('before', function()
 {
 	// Do stuff before every request to your application...
+
+    //Maintenance mode
+    if (0) {
+        return Response::error('503');
+    }
+	
 });
 
 Route::filter('after', function($response)

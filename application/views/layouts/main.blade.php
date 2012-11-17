@@ -24,6 +24,9 @@
         
         <!-- begin content -->
         <div class="wrapper">
+            @if(Session::has('message'))
+                <p style="color: green;">{= Session::get('message') =}</p>
+            @endif            
             @yield('content')
         </div>
         <!-- end content -->

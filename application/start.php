@@ -60,6 +60,7 @@ Laravel\Autoloader::$aliases = $aliases;
 
 Autoloader::map(array(
 	'Base_Controller' => path('app').'controllers/base.php',
+	'ValidateException'		=> path('app').'libraries/exceptions.php',	
 ));
 
 /*
@@ -76,6 +77,9 @@ Autoloader::map(array(
 Autoloader::directories(array(
 	path('app').'models',
 	path('app').'libraries',
+	path('app').'entities',
+	path('app').'repositories',
+	path('app').'services',	
 ));
 
 /*
@@ -171,3 +175,20 @@ if ( ! Request::cli() and Config::get('session.driver') !== '')
 {
 	Session::load();
 }
+
+/**
+ * Require start files.
+ */
+$files = new DirectoryIterator(__DIR__ . DS . 'start');
+ 
+foreach($files as $file)
+{
+    if($file->isDot()) continue;
+ 
+    require $file->getPathname();
+}
+
+/*
+*		Custom helpers
+*/
+require_once 'helpers.php';
