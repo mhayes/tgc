@@ -49,7 +49,7 @@ Route::get('sassplay', function()
 
 Route::get('test', function()
 {
-	return var_dump($environment);
+	return var_dump($_SERVER);
 });
 
 /*
