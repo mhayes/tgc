@@ -23,7 +23,7 @@
 
 $environments = array(
 	'local' => array('http://localhost*', '*.dev'),
-	'live' => array('*.pagodabox.com'),
+	'live' => array('http://tgc.pagodabox.com'),
 );
 
 // --------------------------------------------------------------
