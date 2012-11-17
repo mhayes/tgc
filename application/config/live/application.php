@@ -2,6 +2,6 @@
 
 return array(
 
-	'url' => 'pagoda',
+	'url' => 'http://tgc.pagodabox.com',
 
 );
