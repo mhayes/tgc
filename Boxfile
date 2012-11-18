@@ -24,7 +24,7 @@ web1:
     - mbstring
   before_deploy:
     - "php artisan migrate:install"
-    - "php artisan migrate"
+    - "php artisan migrate --env=live"
   after_deploy:
     - "rm -f storage/cache/*"
     - "rm -f storage/views/*"

@@ -77,7 +77,7 @@ return array(
 			'prefix'   => '',
 		),*/
 
-		'mysql' => array(
+		/*'mysql' => array(
 			'driver'   => 'mysql',
 			'host'     => 'localhost',
 			'database' => 'tgc',
@@ -85,7 +85,7 @@ return array(
 			'password' => 'n1ckf4ld0',
 			'charset'  => 'utf8',
 			'prefix'   => '',
-		),
+		),*/
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',
