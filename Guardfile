@@ -1,8 +1,8 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
-#guard 'sass', :input=> 'public/sass', :output => 'public/css'#, :style => :compressed
-#guard 'coffeescript', :input => 'public/coffee', :output => 'public/js',:bare => true
+##guard 'sass', :input=> 'public/sass', :output => 'public/css'#, :style => :compressed
+##guard 'coffeescript', :input => 'public/coffee', :output => 'public/js',:bare => true
 
 guard 'compass' do
     watch(%r{public/sass/.+\.(sass|scss)})
