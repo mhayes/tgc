@@ -8,6 +8,7 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    compass-validator (3.0.1)
     em-websocket (0.3.8)
       addressable (>= 2.1.1)
       eventmachine (>= 0.12.9)
@@ -74,6 +75,7 @@ PLATFORMS
 
 DEPENDENCIES
   compass
+  compass-validator
   guard
   guard-compass
   guard-livereload
