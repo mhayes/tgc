@@ -4,7 +4,7 @@
 
 	<div class="row">
 		<div class="twelve columns">
-			<h2>Welcome to Laravel with Foundation Sass/Compass</h2>
+			<h2>Welcome to TGC Sass Play Page</h2>
 			<p>This is Laravel version 3.2.11 and Foundation version 3.2.0.</p>
 			<p>This base app contains also Composer for easy package management and HTML5 Boilerplate</p>
 			<p>Assembled by Vilhj&aacute;lmur Magn&uacute;sson</p>
