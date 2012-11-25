@@ -54,6 +54,13 @@ Route::get('test', function()
 
 });
 
+Route::get('testsql', function()
+{
+	$test = DB::query('select * from test');
+	var_dump($test); 
+
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application 404 & 500 Error Handlers
