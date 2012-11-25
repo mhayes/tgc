@@ -13,9 +13,9 @@
         <!-- if you need normalize.css -->
         {{-- HTML::style('css/normalize.min.css') }}
         
-        [[ HTML::style('css/app.css') ]]
+        {{ HTML::style('css/app.css') }}
         
-        [[ HTML::script('js/foundation/modernizr.foundation.js') ]]
+        {{ HTML::script('js/foundation/modernizr.foundation.js') }}
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -25,7 +25,7 @@
         <!-- begin content -->
         <div class="wrapper">
             @if(Session::has('message'))
-                <p style="color: green;">{= Session::get('message') ]]</p>
+                <p style="color: green;">{= Session::get('message') =}</p>
             @endif            
             @yield('content')
         </div>
@@ -36,33 +36,33 @@
         <!-- Use Googles online jQuery lib -->
         <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
         <!-- Use local jQuery lib -->
-        [[ HTML::script('js/foundation/jquery.js') ]]
+        {{ HTML::script('js/foundation/jquery.js') }}
         <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script> -->
         
-        [[ HTML::script('js/foundation/jquery.foundation.tabs.js') ]]
-        [[ HTML::script('js/foundation/jquery.foundation.reveal.js') ]]
-        [[ HTML::script('js/foundation/jquery.event.swipe.js') ]]
-        [[ HTML::script('js/foundation/jquery.foundation.joyride.js') ]]
-        [[ HTML::script('js/foundation/jquery.placeholder.js') ]]
-        [[ HTML::script('js/foundation/jquery.foundation.tooltips.js') ]]
-        [[ HTML::script('js/foundation/jquery.cookie.js') ]]
-        [[ HTML::script('js/foundation/jquery.foundation.clearing.js') ]]
-        [[ HTML::script('js/foundation/jquery.event.move.js') ]]
-        [[ HTML::script('js/foundation/jquery.foundation.topbar.js') ]]
-        [[ HTML::script('js/foundation/jquery.foundation.accordion.js') ]]
-        [[ HTML::script('js/foundation/jquery.foundation.navigation.js') ]]
-        [[ HTML::script('js/foundation/jquery.foundation.mediaQueryToggle.js') ]]
-        [[ HTML::script('js/foundation/jquery.foundation.buttons.js') ]]
-        [[ HTML::script('js/foundation/jquery.foundation.orbit.js') ]]
-        [[ HTML::script('js/foundation/jquery.foundation.alerts.js') ]]
-        [[ HTML::script('js/foundation/jquery.foundation.magellan.js') ]]
-        [[ HTML::script('js/foundation/jquery.foundation.forms.js') ]]
-        [[ HTML::script('js/foundation/app.js') ]]
+        {{ HTML::script('js/foundation/jquery.foundation.tabs.js') }}
+        {{ HTML::script('js/foundation/jquery.foundation.reveal.js') }}
+        {{ HTML::script('js/foundation/jquery.event.swipe.js') }}
+        {{ HTML::script('js/foundation/jquery.foundation.joyride.js') }}
+        {{ HTML::script('js/foundation/jquery.placeholder.js') }}
+        {{ HTML::script('js/foundation/jquery.foundation.tooltips.js') }}
+        {{ HTML::script('js/foundation/jquery.cookie.js') }}
+        {{ HTML::script('js/foundation/jquery.foundation.clearing.js') }}
+        {{ HTML::script('js/foundation/jquery.event.move.js') }}
+        {{ HTML::script('js/foundation/jquery.foundation.topbar.js') }}
+        {{ HTML::script('js/foundation/jquery.foundation.accordion.js') }}
+        {{ HTML::script('js/foundation/jquery.foundation.navigation.js') }}
+        {{ HTML::script('js/foundation/jquery.foundation.mediaQueryToggle.js') }}
+        {{ HTML::script('js/foundation/jquery.foundation.buttons.js') }}
+        {{ HTML::script('js/foundation/jquery.foundation.orbit.js') }}
+        {{ HTML::script('js/foundation/jquery.foundation.alerts.js') }}
+        {{ HTML::script('js/foundation/jquery.foundation.magellan.js') }}
+        {{ HTML::script('js/foundation/jquery.foundation.forms.js') }}
+        {{ HTML::script('js/foundation/app.js') }}
 
-        [[ HTML::script('js/vendor/angular.js') ]]
+        {{ HTML::script('js/vendor/angular.js') }}
 
-        [[ HTML::script('js/plugins.js') ]]
-        [[ HTML::script('js/main.js') ]]
+        {{ HTML::script('js/plugins.js') }}
+        {{ HTML::script('js/main.js') }}
 
         <script type="text/javascript">
           var _gaq = _gaq || [];
@@ -72,7 +72,7 @@
             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();[]
+          })();
         </script>        
         <!-- end javascript -->
     </body>

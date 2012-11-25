@@ -42,19 +42,24 @@ Route::get('/', function()
 });
 
 
-Route::get('sassplay', function()
+Route::get('play-sass', function()
 {
 	return View::make('home.sass');
 });
 
-Route::get('test', function()
+Route::get('play-angular', function()
+{
+	return View::make('home.angular');
+});
+
+Route::get('play', function()
 {
 	var_dump($_SERVER); 
 	phpinfo();
 
 });
 
-Route::get('testsql', function()
+Route::get('play-sql', function()
 {
 	$test = DB::query('select * from test');
 	var_dump($test); 
