@@ -3,7 +3,6 @@
 return array(
 
 	'connections' => array(
-
 		'mysql' => array(
 			'driver'   => 'mysql',
 			'host'     => 'tunnel.pagodabox.com',
@@ -13,7 +12,14 @@ return array(
 			'charset'  => 'utf8',
 			'prefix'   => '',
 		),
-
 	),
+
+	'redis' => array(
+		'default' => array(
+			'host'     => 'tunnel.pagodabox.com',
+			'port'     => 6379,
+			'database' => 0
+		),
+	),	
 
 );
