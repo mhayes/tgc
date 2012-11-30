@@ -197,10 +197,9 @@ class Blade {
 	 */
 	protected static function compile_echos($value)
 	{
-		/*return preg_replace('/\{\{(.+?)\}\}/', '<?php echo $1; ?>', $value);*/
+		return preg_replace('/\{\{(.+?)\}\}/', '<?php echo $1; ?>', $value);
 		//RLove-Change 25/11/2012: Change delimiter to 
-		return preg_replace('/\[\[(.+?)\]\]/', '<?php echo $1; ?>', $value);
-		/*return preg_replace('/\{\=(.+?)\=\}/', '<?php echo $1; ?>', $value);*/
+		/*return preg_replace('/\[\[(.+?)\]\]/', '<?php echo $1; ?>', $value);*/
 	}
 
 	/**
