@@ -52,6 +52,11 @@ Route::get('play-angular', function()
 	return View::make('home.angular');
 });
 
+Route::get('play-angular2', function()
+{
+	return View::make('home.angular2');
+});
+
 Route::get('play', function()
 {
 	var_dump($_SERVER); 
