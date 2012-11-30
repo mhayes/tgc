@@ -1,4 +1,4 @@
-@layout('layouts.main')
+@layout('layouts.angular')
 
 @section('content')
 
@@ -12,10 +12,7 @@
 	<div class="row">
 		<div class="twelve columns">
 
-	      <label>Name:</label>
-	      <input type="text" ng-model="yourName" placeholder="Enter a name here">
-	      <hr>
-	      <h1>Hello {{yourName}}!</h1>
+	      <div ng-view></div>
 
 		</div>
 	</div>
