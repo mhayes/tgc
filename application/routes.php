@@ -41,10 +41,23 @@ Route::get('/', function()
 	return View::make('home.index');
 });
 
+/*==========================================================*/
+/*   Play Files  - Start                                    */
+/*==========================================================*/
+Route::get('play', function()
+{
+	var_dump($_SERVER); 
+	phpinfo();
+});
 
 Route::get('play-sass', function()
 {
 	return View::make('home.sass');
+});
+
+Route::get('play-compass', function()
+{
+	return View::make('home.compass');
 });
 
 Route::get('play-angular', function()
@@ -57,19 +70,15 @@ Route::get('play-angular2', function()
 	return View::make('home.angular2');
 });
 
-Route::get('play', function()
-{
-	var_dump($_SERVER); 
-	phpinfo();
-
-});
-
 Route::get('play-sql', function()
 {
 	$test = DB::query('select * from test');
 	var_dump($test); 
-
 });
+/*==========================================================*/
+/*   Play Files  - End                                      */
+/*==========================================================*/
+
 
 /*
 |--------------------------------------------------------------------------
