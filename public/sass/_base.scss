@@ -1,9 +1,9 @@
 
 // Base file. Use for common variables, framework utilities and mixins. This is imported in to app.css
 
-$blue: #3bbfce;
+$background: #333;
 $margin: 16px;
+$cream:#f2efeb;
+$cream2:$cream - 50;
 
-body {
-	background: #f4f4f4 !important;
-}
+
