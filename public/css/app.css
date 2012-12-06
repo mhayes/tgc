@@ -5914,12 +5914,12 @@ table.hide-for-medium {
   background-position: 0 -68px;
 }
 
-/* line 13, ../sass/app.scss */
+/* line 14, ../sass/app.scss */
 body {
   background: #333333 !important;
 }
 
-/* line 17, ../sass/app.scss */
+/* line 18, ../sass/app.scss */
 h1, h2, h3, h4 {
   color: #c0bdb9;
 }
@@ -5930,7 +5930,7 @@ h1, h2, h3, h4 {
 	@include transition-duration(0.2s); 
 	@include transition-timing-function(ease-in);
 }*/
-/* line 26, ../sass/app.scss */
+/* line 27, ../sass/app.scss */
 #main {
   background: #f2efeb;
   padding: 10px;
@@ -5946,7 +5946,7 @@ h1, h2, h3, h4 {
   background-image: linear-gradient(#f2efeb, #c0bdb9);
 }
 
-/* line 33, ../sass/app.scss */
+/* line 34, ../sass/app.scss */
 #side {
   background: #f2efeb;
   padding: 10px;
@@ -5962,19 +5962,46 @@ h1, h2, h3, h4 {
   background-image: linear-gradient(#f2efeb, #c0bdb9);
 }
 
-/* line 40, ../sass/app.scss */
+/* line 41, ../sass/app.scss */
 ul.social-links {
-  margin-bottom: 60px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 15px;
 }
-/* line 42, ../sass/app.scss */
+/* line 60, ../../../../Users/Rich/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul.social-links li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 48, ../../../../Users/Rich/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul.social-links li:first-child, ul.social-links li.first {
+  padding-left: 0;
+}
+/* line 49, ../../../../Users/Rich/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul.social-links li:last-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../Users/Rich/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul.social-links li.last {
+  padding-right: 0;
+}
+/* line 44, ../sass/app.scss */
 ul.social-links li {
   list-style: none;
 }
-/* line 44, ../sass/app.scss */
+/* line 46, ../sass/app.scss */
 ul.social-links li a {
   display: block;
-  float: left;
-  width: 40px;
+  width: 32px;
   height: 32px;
   text-indent: -9999px;
 }

@@ -6,6 +6,7 @@
 
 // Comment out this import if you are customizing you imports below
 @import "foundation";
+@import "compass/typography";
 
 @import "social/*.png";
 @include all-social-sprites;
@@ -38,9 +39,10 @@ h1, h2, h3, h4 {color:$cream2;}
 }
 
 ul.social-links {
-	margin-bottom: 60px;
+	@include horizontal-list;
+	margin-bottom: 15px;
 	li {
 		list-style: none;
-		a{display:block; float:left; width:40px; height:32px; text-indent:-9999px;}
+		a{display:block; width:32px; height:32px; text-indent:-9999px;}
 	}
 }
