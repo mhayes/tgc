@@ -61,17 +61,15 @@
         {{ HTML::script('js/foundation/jquery.foundation.forms.js') }}
         {{ HTML::script('js/foundation/app.js') }}
 
-        <!-- Angular JS files -->
-        {{ HTML::script('js/vendor/angular.js') }}
-        {{ HTML::script('js/angular/app.js') }}
-        {{ HTML::script('js/angular/controllers.js') }}
-        {{ HTML::script('js/angular/directives.js') }}
-        {{ HTML::script('js/angular/filters.js') }} 
-        {{ HTML::script('js/angular/services.js') }}                         
-
         <!-- Misc JS files -->
         {{ HTML::script('js/plugins.js') }}
         {{ HTML::script('js/main.js') }}
+
+          <script type="text/javascript">
+             $(window).load(function() {
+                 $('#slider').orbit();
+             });
+          </script>
 
         <script type="text/javascript">
           var _gaq = _gaq || [];
