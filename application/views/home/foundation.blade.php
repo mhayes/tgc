@@ -4,7 +4,7 @@
 
 	<div class="row">
 		<div class="twelve columns">
-			<h2>TGC Sass Play Page</h2>
+			<h2>TGC Foundation Play Page</h2>
 			<hr />
 		</div>
 	</div>

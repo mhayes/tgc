@@ -49,27 +49,26 @@ Route::get('play', function()
 	var_dump($_SERVER); 
 	phpinfo();
 });
-
+Route::get('play-foundation', function()
+{
+	return View::make('home.foundation');
+});
 Route::get('play-sass', function()
 {
 	return View::make('home.sass');
 });
-
 Route::get('play-compass', function()
 {
 	return View::make('home.compass');
 });
-
 Route::get('play-angular', function()
 {
 	return View::make('home.angular');
 });
-
 Route::get('play-angular2', function()
 {
 	return View::make('home.angular2');
 });
-
 Route::get('play-sql', function()
 {
 	$test = DB::query('select * from test');

@@ -6,10 +6,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title> The Golf Counter</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        
+        <link rel="shortcut icon" href="/favicon.ico">
+
         <!-- if you need normalize.css -->
         {{-- HTML::style('css/normalize.min.css') }}
         
