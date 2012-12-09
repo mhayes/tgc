@@ -65,11 +65,17 @@
         {{ HTML::script('js/plugins.js') }}
         {{ HTML::script('js/main.js') }}
 
-          <script type="text/javascript">
-             $(window).load(function() {
-                 $('#slider').orbit();
-             });
-          </script>
+        <script type="text/javascript">
+            $(window).load(function() {
+                $('#slider').orbit();
+            });
+        </script>
+
+        <script type="text/javascript">
+            $(window).load(function() {
+                $('#featured').orbit({ fluid: '2x1' });
+            });
+        </script>
 
         <script type="text/javascript">
           var _gaq = _gaq || [];

@@ -79,6 +79,64 @@ Route::get('play-sql', function()
 /*   Play Files  - End                                      */
 /*==========================================================*/
 
+/*==========================================================*/
+/*   Foundation Templates  - Start                          */
+/*==========================================================*/
+Route::get('banded', function()
+{
+	return View::make('templates.banded');
+});
+Route::get('blog', function()
+{
+	return View::make('templates.blog');
+});
+Route::get('contact', function()
+{
+	return View::make('templates.contact');
+});
+Route::get('feed', function()
+{
+	return View::make('templates.feed');
+});
+Route::get('orbit', function()
+{
+	return View::make('templates.homepage-1');
+});
+Route::get('banner', function()
+{
+	return View::make('templates.homepage-2');
+});
+Route::get('sidebar', function()
+{
+	return View::make('templates.sidebar');
+});
+Route::get('grid', function()
+{
+	return View::make('templates.grid');
+});
+Route::get('marketing', function()
+{
+	return View::make('templates.marketing');
+});
+Route::get('realty', function()
+{
+	return View::make('templates.realty');
+});
+Route::get('soboxy', function()
+{
+	return View::make('templates.so-boxy');
+});
+Route::get('store', function()
+{
+	return View::make('templates.store');
+});
+Route::get('workspace', function()
+{
+	return View::make('templates.workspace');
+});
+/*==========================================================*/
+/*   Foundation Templates   - End                           */
+/*==========================================================*/
 
 /*
 |--------------------------------------------------------------------------
