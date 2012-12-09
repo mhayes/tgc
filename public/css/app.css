@@ -2724,7 +2724,7 @@ div.orbit-wrapper span.rotator {
   position: absolute;
   top: 0;
   left: -20px;
-  background: url('public/public/img/foundation/orbit/rotator-black.png?1352155221') no-repeat;
+  background: url('/img/foundation/orbit/rotator-black.png?1352155221') no-repeat;
   z-index: 3;
 }
 /* line 27, ../../../../Users/Rich/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
@@ -2746,7 +2746,7 @@ div.orbit-wrapper span.mask {
 div.orbit-wrapper span.mask.move {
   width: 40px;
   left: 0;
-  background: url('public/public/img/foundation/orbit/timer-black.png?1352155221') repeat 0 0;
+  background: url('/img/foundation/orbit/timer-black.png?1352155221') repeat 0 0;
 }
 /* line 32, ../../../../Users/Rich/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper span.pause {
@@ -2756,13 +2756,13 @@ div.orbit-wrapper span.pause {
   position: absolute;
   top: 0;
   left: 0;
-  background: url('public/public/img/foundation/orbit/pause-black.png?1352155221') no-repeat;
+  background: url('/img/foundation/orbit/pause-black.png?1352155221') no-repeat;
   z-index: 4;
   opacity: 0;
 }
 /* line 33, ../../../../Users/Rich/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper span.pause.active {
-  background: url('public/public/img/foundation/orbit/pause-black.png?1352155221') no-repeat 0 -40px;
+  background: url('/img/foundation/orbit/pause-black.png?1352155221') no-repeat 0 -40px;
 }
 /* line 35, ../../../../Users/Rich/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper div.timer:hover span.pause, div.orbit-wrapper span.pause.active {
@@ -2809,24 +2809,24 @@ div.orbit-wrapper div.slider-nav span {
 }
 /* line 48, ../../../../Users/Rich/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper div.slider-nav span.right {
-  background: url('public/public/img/foundation/orbit/right-arrow.png?1352155221');
+  background: url('/img/foundation/orbit/right-arrow.png?1352155221');
   background-size: 100%;
   right: 0;
 }
 /* line 49, ../../../../Users/Rich/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper div.slider-nav span.left {
-  background: url('public/public/img/foundation/orbit/left-arrow.png?1352155221');
+  background: url('/img/foundation/orbit/left-arrow.png?1352155221');
   background-size: 100%;
   left: 0;
 }
 
 /* line 54, ../../../../Users/Rich/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 .lt-ie9 div.orbit-wrapper div.slider-nav span.right {
-  background: url('public/public/img/foundation/orbit/right-arrow-small.png?1352155221');
+  background: url('/img/foundation/orbit/right-arrow-small.png?1352155221');
 }
 /* line 55, ../../../../Users/Rich/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 .lt-ie9 div.orbit-wrapper div.slider-nav span.left {
-  background: url('public/public/img/foundation/orbit/left-arrow-small.png?1352155221');
+  background: url('/img/foundation/orbit/left-arrow-small.png?1352155221');
 }
 
 /* Bullet Nav ---------------------- */
@@ -2847,7 +2847,7 @@ ul.orbit-bullets li {
   cursor: pointer;
   color: #999999;
   text-indent: -9999px;
-  background: url('public/public/img/foundation/orbit/bullets.jpg?1352155221') no-repeat 4px 0;
+  background: url('/img/foundation/orbit/bullets.jpg?1352155221') no-repeat 4px 0;
   width: 13px;
   height: 12px;
   overflow: hidden;
@@ -5914,23 +5914,19 @@ table.hide-for-medium {
   background-position: 0 -68px;
 }
 
-/* line 14, ../sass/app.scss */
-body {
-  background: #333333 !important;
+/*body {
+	background: $background !important;
 }
+*/
+/*h1, h2, h3, h4 {color:$cream2;}
 
-/* line 18, ../sass/app.scss */
-h1, h2, h3, h4 {
-  color: #c0bdb9;
-}
-
-/*a {
-	&:hover {background: $background; color: $cream;}
+a {
 	@include transition-property(all);
 	@include transition-duration(0.2s); 
 	@include transition-timing-function(ease-in);
+	@include link-colors(red,yellow,blue,green);
 }*/
-/* line 27, ../sass/app.scss */
+/* line 28, ../sass/app.scss */
 #main {
   background: #f2efeb;
   padding: 10px;
@@ -5946,7 +5942,7 @@ h1, h2, h3, h4 {
   background-image: linear-gradient(#f2efeb, #c0bdb9);
 }
 
-/* line 34, ../sass/app.scss */
+/* line 35, ../sass/app.scss */
 #side {
   background: #f2efeb;
   padding: 10px;
@@ -5962,7 +5958,7 @@ h1, h2, h3, h4 {
   background-image: linear-gradient(#f2efeb, #c0bdb9);
 }
 
-/* line 41, ../sass/app.scss */
+/* line 42, ../sass/app.scss */
 ul.social-links {
   margin: 0;
   padding: 0;
@@ -5994,11 +5990,11 @@ ul.social-links li:last-child {
 ul.social-links li.last {
   padding-right: 0;
 }
-/* line 44, ../sass/app.scss */
+/* line 45, ../sass/app.scss */
 ul.social-links li {
   list-style: none;
 }
-/* line 46, ../sass/app.scss */
+/* line 47, ../sass/app.scss */
 ul.social-links li a {
   display: block;
   width: 32px;

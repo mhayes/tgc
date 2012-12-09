@@ -11,17 +11,18 @@
 @import "social/*.png";
 @include all-social-sprites;
 
-body {
+/*body {
 	background: $background !important;
 }
+*/
 
-h1, h2, h3, h4 {color:$cream2;}
+/*h1, h2, h3, h4 {color:$cream2;}
 
-/*a {
-	&:hover {background: $background; color: $cream;}
+a {
 	@include transition-property(all);
 	@include transition-duration(0.2s); 
 	@include transition-timing-function(ease-in);
+	@include link-colors(red,yellow,blue,green);
 }*/
 
 #main {
@@ -43,6 +44,6 @@ ul.social-links {
 	margin-bottom: 15px;
 	li {
 		list-style: none;
-		a{display:block; width:32px; height:32px; text-indent:-9999px;}
+		a {display:block; width:32px; height:32px; text-indent:-9999px;}
 	}
 }
