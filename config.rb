@@ -2,7 +2,7 @@ require 'zurb-foundation'
 # Require any additional compass plugins here.
 
 #Misc
-http_path 									= "public"
+http_path   								= "public"
 
 #Styles
 css_dir 										= "public/css"
@@ -10,7 +10,7 @@ sass_dir 										= "public/sass"
 
 #Images
 images_dir 									= "public/img"
-generated_images_path				= "public/img/sprites"
+generated_images_dir				= "public/img/sprites"
 http_generated_images_path 	= "/img/sprites"
 
 #Javascript
@@ -20,7 +20,7 @@ javascripts_dir 						= "public/js"
 # output_style = :expanded or :nested or :compact or :compressed
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
-# relative_assets = true
+relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 # line_comments = false
